@@ -12,10 +12,9 @@
         <item name="textColorThm">@color/textColorWhite</item>
         <item name="textColorHintThm">@color/textColorHintWhite</item>
         <item name="actionMenuTextColor">@color/blackWhite</item>
-
     </style>
 
-    <style name="BlackThemeNoActionBar" parent="BlackTheme">
+    <style name="LightNoActionBar" parent="LightTheme">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
 

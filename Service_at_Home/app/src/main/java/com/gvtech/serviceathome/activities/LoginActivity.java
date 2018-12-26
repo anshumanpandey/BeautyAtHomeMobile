@@ -24,14 +24,23 @@ public class LoginActivity extends AppCompatActivity {
             w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         }
 
-        replaceFragment(new LoginFragment());
+        replaceFragment(new LoginFragment(),false);
     }
 
-    public void replaceFragment(Fragment fragment) {
+    public void beck(){
+        onBackPressed();
+    }
+
+    public void replaceFragment(Fragment fragment, boolean stack) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.setCustomAnimations(R.anim.enter_from_left, R.anim.exit_to_right, R.anim.enter_from_right, R.anim.exit_to_left);
         fragmentTransaction.replace(R.id.layout_main, fragment, fragment.toString());
-        fragmentTransaction.addToBackStack(fragment.toString());
+        if (stack){
+            fragmentTransaction.addToBackStack(fragment.toString());
+        }else {
+//            fragmentTransaction.addToBackStack(null);
+        }
         fragmentTransaction.commit();
     }
 }

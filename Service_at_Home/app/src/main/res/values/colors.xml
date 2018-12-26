@@ -3,8 +3,9 @@
 
 
     <!-- WHITE -->
-    <color name="colorPrimaryWhite">#dc960124</color>
-    <color name="colorPrimaryDarkWhite">#dc830321</color>
+    <color name="colorPrimaryWhite">#830321</color>
+    <color name="colorPrimaryDarkWhite">#830321</color>
+    <color name="colorPrimaryLightWhite">#ca0433</color>
     <color name="colorAccentWhite">#D81B60</color>
     <color name="blackWhite">#000000</color>
     <color name="whiteWhite">#FFFFFF</color>

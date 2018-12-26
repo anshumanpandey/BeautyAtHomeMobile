@@ -1,6 +1,7 @@
 package com.gvtech.serviceathome.fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.gvtech.serviceathome.HomeActivity;
 import com.gvtech.serviceathome.R;
 import com.gvtech.serviceathome.activities.LoginActivity;
 
@@ -37,13 +39,19 @@ public class LoginFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        Button btnLogin = view.findViewById(R.id.btn_login);
         Button btnReg = view.findViewById(R.id.btn_reg);
         Button btnLinkBusiness = view.findViewById(R.id.btnLinkBusiness);
         btnReg.setOnClickListener(v -> {
-            ((LoginActivity)this.getActivity()).replaceFragment(new RegistrationFragment());
+            ((LoginActivity)this.getActivity()).replaceFragment(new RegistrationFragment(), true);
         });
         btnLinkBusiness.setOnClickListener(v -> {
-            ((LoginActivity)this.getActivity()).replaceFragment(new LinkBusinessFragment());
+            ((LoginActivity)this.getActivity()).replaceFragment(new LinkBusinessFragment(),true);
+        });
+        btnLogin.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity().getApplicationContext(),HomeActivity.class);
+            getActivity().startActivity(intent);
+            getActivity().finish();
         });
     }
 

@@ -26,4 +26,12 @@
     <string name="txt_hint_con_pass">Confirm Password</string>
     <string name="register">Register</string>
     <string name="txt_hint_business_name">Business Name</string>
+    <string name="home">Home</string>
+    <string name="account_details">Account Details</string>
+    <string name="search_professional">Search professional</string>
+    <string name="booking_history">Booking history</string>
+    <string name="calendar_events">Calendar Events</string>
+    <string name="change_pass">Change password</string>
+    <string name="logout">Logout</string>
+    <string name="services">Services</string>
 </resources>
