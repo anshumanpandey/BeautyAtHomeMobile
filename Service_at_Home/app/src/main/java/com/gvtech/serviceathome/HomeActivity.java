@@ -1,5 +1,6 @@
 package com.gvtech.serviceathome;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -25,7 +26,9 @@ import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
+import com.gvtech.serviceathome.activities.AccountActivity;
 import com.gvtech.serviceathome.adapters.ServiceAdapter;
+import com.gvtech.serviceathome.data.LoadData;
 import com.gvtech.serviceathome.utils.SharedStore;
 
 import java.util.HashMap;
@@ -99,7 +102,7 @@ public class HomeActivity extends AppCompatActivity
 
 
         //
-        serviceAdapter = new ServiceAdapter();
+        serviceAdapter = new ServiceAdapter(getApplicationContext(),LoadData.loadServiseData());
         RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(getApplicationContext(),3);
         recyclerService.setLayoutManager(mLayoutManager);
         recyclerService.setItemAnimator(new DefaultItemAnimator());
@@ -147,7 +150,8 @@ public class HomeActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
             // Handle the camera action
         } else if (id == R.id.nav_account_details) {
-
+            Intent intent = new Intent(getApplicationContext(),AccountActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_search_professional) {
 
         } else if (id == R.id.nav_booking_history) {

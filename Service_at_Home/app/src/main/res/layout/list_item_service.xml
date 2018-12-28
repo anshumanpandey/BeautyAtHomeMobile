@@ -15,15 +15,19 @@
         android:layout_marginTop="20dp"
         android:gravity="center">
         <ImageView
+            android:id="@+id/img_service_url"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:scaleType="centerCrop"
             android:alpha="0.6"
             android:src="@drawable/ic_massage"/>
         <TextView
+            android:id="@+id/txt_service_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16sp"
+            android:padding="2dp"
+            android:textAlignment="center"
             android:minLines="2"
             android:maxLines="2"
             android:text="Demo service"/>

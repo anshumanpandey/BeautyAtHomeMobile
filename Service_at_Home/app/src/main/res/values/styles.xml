@@ -19,6 +19,7 @@
         <item name="windowNoTitle">true</item>
 
     </style>
+
     <style name="LightThemeNoActionBar" parent="LightTheme">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -26,8 +27,7 @@
         <item name="android:windowTranslucentNavigation">true</item>
     </style>
 
-    <style name="ActionBar.TitleTextStyle"
-        parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+    <style name="ActionBar.TitleTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
         <item name="android:textColor">@color/textColorWhite</item>
     </style>
 
@@ -52,11 +52,21 @@
 
     <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="PopupOverlayLight" parent="ThemeOverlay.AppCompat.Light" >
+    <style name="PopupOverlayLight" parent="ThemeOverlay.AppCompat.Light">
 
     </style>
-    <style name="PopupOverlayBark" parent="ThemeOverlay.AppCompat.Dark" >
+
+    <style name="PopupOverlayBark" parent="ThemeOverlay.AppCompat.Dark">
 
     </style>
+
+    <style name="LightTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="LightTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="LightTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>
