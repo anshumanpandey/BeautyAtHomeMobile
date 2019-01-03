@@ -31,10 +31,10 @@ public class BusinessDetailsActivity extends AppCompatActivity {
         tabLayout=(TabLayout)findViewById(R.id.tabLayout);
         viewPager=(ViewPager)findViewById(R.id.viewPager);
 
-        tabLayout.addTab(tabLayout.newTab().setText("Services"));
-        tabLayout.addTab(tabLayout.newTab().setText("Availability"));
-        tabLayout.addTab(tabLayout.newTab().setText("Gallery"));
-        tabLayout.addTab(tabLayout.newTab().setText("About Me"));
+        tabLayout.addTab(tabLayout.newTab().setText(getResources().getString(R.string.services)));
+        tabLayout.addTab(tabLayout.newTab().setText(getResources().getString(R.string.availability)));
+        tabLayout.addTab(tabLayout.newTab().setText(getResources().getString(R.string.gallery)));
+        tabLayout.addTab(tabLayout.newTab().setText(getResources().getString(R.string.about_Me)));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         final MyAdapter adapter = new MyAdapter(this,getSupportFragmentManager(), tabLayout.getTabCount());

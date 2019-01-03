@@ -50,10 +50,19 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.gvtech.serviceathome.HomeActivity" />
         </activity>
-        <activity android:name=".activities.AccountActivity"
-            android:parentActivityName=".HomeActivity"
+        <activity
+            android:name=".activities.AccountActivity"
             android:label="@string/account_details"
-            >
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".activities.SearchProfessionalActivity"
+            android:label="@string/search_professional"
+            android:parentActivityName=".HomeActivity">
+
+        </activity>
+        <activity android:name=".activities.BookingHistoryActivity"
+            android:label="@string/booking_history"
+            android:parentActivityName=".HomeActivity">
 
         </activity>
     </application>

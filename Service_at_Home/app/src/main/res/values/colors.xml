@@ -11,6 +11,7 @@
     <color name="whiteWhite">#FFFFFF</color>
     <color name="bodyColorWhite">#ecebeb</color>
     <color name="textColorWhite">#000000</color>
+    <color name="bodyColorDark">#d7d7d7</color>
     <color name="textColorHintWhite">#b7b7b7</color>
 
 
@@ -27,5 +28,6 @@
     <color name="bodyColorBlack">#1a1a1a</color>
     <color name="textColorBlack">#ffffff</color>
     <color name="textColorHintBlack">#252424</color>
+    <color name="done">#00FF00</color>
     <!-- END BLACK-->
 </resources>

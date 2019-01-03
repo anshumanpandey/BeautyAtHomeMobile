@@ -27,6 +27,8 @@ import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
 import com.gvtech.serviceathome.activities.AccountActivity;
+import com.gvtech.serviceathome.activities.BookingHistoryActivity;
+import com.gvtech.serviceathome.activities.SearchProfessionalActivity;
 import com.gvtech.serviceathome.adapters.ServiceAdapter;
 import com.gvtech.serviceathome.data.LoadData;
 import com.gvtech.serviceathome.utils.SharedStore;
@@ -153,9 +155,11 @@ public class HomeActivity extends AppCompatActivity
             Intent intent = new Intent(getApplicationContext(),AccountActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_search_professional) {
-
+            Intent intent = new Intent(getApplicationContext(),SearchProfessionalActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_booking_history) {
-
+            Intent intent = new Intent(getApplicationContext(),BookingHistoryActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_calendar_events) {
 
         }else if (id == R.id.nav_change_pass) {

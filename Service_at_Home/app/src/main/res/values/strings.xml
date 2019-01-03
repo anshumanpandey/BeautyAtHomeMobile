@@ -125,4 +125,21 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="process">Process</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="address_details">Address Details</string>
+    <string name="txt_hint_pincode">Enter Pincode</string>
+    <string name="lookup">Look Up</string>
+    <string name="current_location">Current Location</string>
+    <string name="use_current_location">Use current location</string>
+    <string name="or">Or</string>
+    <string name="current_address">Current address</string>
+    <string name="update">Submit</string>
+    <string name="search_details">Search Details</string>
+    <string name="availability">Availability</string>
+    <string name="gallery">Gallery</string>
+    <string name="about_Me">About Me</string>
+    <string name="date">Choose Date</string>
+    <string name="select_service">Select service</string>
+    <string name="enter_pincode">Enter Pincode</string>
+    <string name="search">Search</string>
 </resources>
