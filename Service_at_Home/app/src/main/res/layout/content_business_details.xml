@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".activities.BusinessDetailsActivity"
+    tools:context=".activities.user.BusinessDetailsActivity"
     tools:showIn="@layout/activity_business_details">
 
     <RelativeLayout

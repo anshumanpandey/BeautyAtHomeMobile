@@ -31,6 +31,13 @@
         <item name="android:textColor">@color/textColorWhite</item>
     </style>
 
+    <style name="Theme_Dialog" parent="Base.Theme.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">98%</item>
+        <item name="android:windowMinWidthMinor">98%</item>
+        <item name="colorPrimary">@color/colorPrimaryWhite</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkWhite</item>
+        <item name="colorAccent">@color/colorAccentWhite</item>
+    </style>
     <!-- END WHITE THEME -->
 
 

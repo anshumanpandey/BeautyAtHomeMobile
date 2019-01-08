@@ -10,9 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.gvtech.serviceathome.R;
-import com.gvtech.serviceathome.activities.BusinessDetailsActivity;
-import com.gvtech.serviceathome.activities.ServiceItemActivity;
-import com.gvtech.serviceathome.models.Service;
+import com.gvtech.serviceathome.activities.user.BusinessDetailsActivity;
 import com.gvtech.serviceathome.models.ServiceItem;
 
 import java.util.ArrayList;

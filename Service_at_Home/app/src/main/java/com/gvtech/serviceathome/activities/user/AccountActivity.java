@@ -1,4 +1,4 @@
-package com.gvtech.serviceathome.activities;
+package com.gvtech.serviceathome.activities.user;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

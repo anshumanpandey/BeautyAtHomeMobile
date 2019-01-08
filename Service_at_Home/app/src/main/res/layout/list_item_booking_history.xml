@@ -11,15 +11,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:weightSum="1"
-        android:gravity="center">
-        <ImageView
+        android:weightSum="1">
+        <com.makeramen.roundedimageview.RoundedImageView
             android:id="@+id/img_service_url"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:scaleType="centerCrop"
             android:layout_weight="0.3"
-            android:src="@drawable/ic_massage"/>
+            app:riv_corner_radius="5dp"
+            android:src="@drawable/demo_user"/>
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -96,7 +96,7 @@
                 android:layout_weight="1"
                 android:numStars="5"
                 android:rating="0"
-                android:stepSize="0.1"
+                android:stepSize="0.5"
                 android:isIndicator="false"
                 android:visibility="visible" />
         </LinearLayout>

@@ -1,30 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/bodyColorWhite"
-    tools:context=".activities.user.AccountActivity">
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.professional.ProfAccountDetailsActivity"
+    tools:showIn="@layout/activity_prof_account_details">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="vertical"
         android:padding="10dp">
 
-        <com.makeramen.roundedimageview.RoundedImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_margin="15dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/demo_user"
-            app:riv_border_color="@color/whiteWhite"
-            app:riv_border_width="2dp"
-            app:riv_oval="true" />
-
         <android.support.v7.widget.CardView
+            android:id="@+id/card_personal_details"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -34,6 +25,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
                 android:padding="0dp">
 
                 <TextView
@@ -52,6 +45,20 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_hint_business_name"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Parash Business"
+                        android:textColor="@color/textColorWhite"
+                        android:textSize="20sp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -125,6 +132,17 @@
                         android:textSize="20sp" />
                 </LinearLayout>
 
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/button_bg_theme"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/update"
+                    android:textColor="@color/whiteWhite" />
+
             </LinearLayout>
 
 
@@ -133,6 +151,8 @@
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/card_personal_details"
             app:cardCornerRadius="10dp">
 
             <LinearLayout
@@ -156,64 +176,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:gravity="center"
                     android:padding="10dp">
-
-                    <!--<LinearLayout-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:gravity="center"-->
-                        <!--android:orientation="horizontal"-->
-                        <!--android:weightSum="1">-->
-
-                        <!--<TextView-->
-                            <!--android:layout_width="0dp"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:layout_weight="0.6"-->
-                            <!--android:focusableInTouchMode="true"-->
-                            <!--android:text="@string/use_current_location"-->
-                            <!--android:textSize="16dp" />-->
-
-                        <!--<ImageButton-->
-                            <!--android:layout_width="50dp"-->
-                            <!--android:layout_height="50dp"-->
-                            <!--android:background="@drawable/button_bg_theme"-->
-                            <!--android:src="@drawable/ic_gps"-->
-
-                            <!--android:textColor="@color/whiteWhite" />-->
-                    <!--</LinearLayout>-->
-
-                    <!--<LinearLayout-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:gravity="center"-->
-                        <!--android:orientation="horizontal"-->
-                        <!--android:weightSum="1">-->
-
-                        <!--<View-->
-                            <!--android:layout_width="0dp"-->
-                            <!--android:layout_height="1dp"-->
-                            <!--android:layout_weight="0.45"-->
-                            <!--android:background="@color/bodyColorWhite" />-->
-
-                        <!--<TextView-->
-                            <!--android:layout_width="0dp"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:layout_weight="0.1"-->
-                            <!--android:focusableInTouchMode="true"-->
-                            <!--android:background="@drawable/button_bg_theme"-->
-                            <!--android:text="@string/or"-->
-                            <!--android:textColor="@color/whiteWhite"-->
-                            <!--android:textAlignment="center"-->
-                            <!--android:textSize="18dp" />-->
-
-                        <!--<View-->
-                            <!--android:layout_width="0dp"-->
-                            <!--android:layout_height="1dp"-->
-                            <!--android:layout_weight="0.45"-->
-                            <!--android:background="@color/bodyColorWhite" />-->
-                    <!--</LinearLayout>-->
-
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -225,7 +188,7 @@
                         <EditText
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="0.5"
+                            android:layout_weight="0.7"
                             android:focusableInTouchMode="true"
                             android:hint="@string/txt_hint_pincode" />
 
@@ -236,46 +199,109 @@
                             android:background="@drawable/button_bg_theme"
                             android:text="@string/lookup"
                             android:textColor="@color/whiteWhite" />
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:text="/"
-                            android:layout_weight="0.05"
-                            android:textAlignment="center"
-                            android:textSize="36sp"/>
-
-                        <ImageButton
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="0.15"
-                            android:background="@drawable/button_bg_theme"
-                            android:src="@drawable/ic_gps"
-                            android:textColor="@color/whiteWhite" />
-
                     </LinearLayout>
 
-                    <EditText
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:focusableInTouchMode="true"
-                        android:layout_marginTop="5dp"
-                        android:hint="@string/current_address" />
-                    <Button
-                        android:layout_width="wrap_content"
+                        android:text="@string/txt_hint_address_one"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/button_bg_theme"
-                        android:paddingStart="50dp"
-                        android:paddingEnd="50dp"
-                        android:text="@string/update"
-                        android:textColor="@color/whiteWhite" />
+                        android:padding="5dp"
+                        android:text="SDF"
+                        android:textColor="@color/textColorWhite"
+                        android:textSize="20sp" />
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_hint_address_two"
+                        android:textSize="16sp" />
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Sec v"
+                        android:textColor="@color/textColorWhite"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bodyColorWhite" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_hint_address_three"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Salt lake"
+                        android:textColor="@color/textColorWhite"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bodyColorWhite" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_hint_city"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Kolkata"
+                        android:textColor="@color/textColorWhite"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bodyColorWhite" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_hint_state"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="WB"
+                        android:textColor="@color/textColorWhite"
+                        android:textSize="20sp" />
                 </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/button_bg_theme"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/update"
+                    android:textColor="@color/whiteWhite" />
 
             </LinearLayout>
 
 
         </android.support.v7.widget.CardView>
-    </LinearLayout>
 
-</ScrollView>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

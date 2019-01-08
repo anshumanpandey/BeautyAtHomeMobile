@@ -1,4 +1,4 @@
-package com.gvtech.serviceathome.activities;
+package com.gvtech.serviceathome.activities.user;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;

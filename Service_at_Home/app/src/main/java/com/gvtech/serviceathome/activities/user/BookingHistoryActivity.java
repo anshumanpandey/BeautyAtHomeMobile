@@ -1,30 +1,29 @@
-package com.gvtech.serviceathome.activities;
+package com.gvtech.serviceathome.activities.user;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.gvtech.serviceathome.R;
+import com.gvtech.serviceathome.adapters.BookingHistoryAdapter;
 import com.gvtech.serviceathome.adapters.ServiceItemAdapter;
 import com.gvtech.serviceathome.data.LoadData;
 
-public class ServiceItemActivity extends AppCompatActivity {
+public class BookingHistoryActivity extends AppCompatActivity {
 
-    RecyclerView recyclerView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_service_item);
+        setContentView(R.layout.activity_booking_history);
 
-        recyclerView = findViewById(R.id.recycler_service_item);
+        RecyclerView recyclerView = findViewById(R.id.recycler_booking_history);
 
-        ServiceItemAdapter serviceAdapter = new ServiceItemAdapter(getApplicationContext(),LoadData.loadServiseItemData());
+        BookingHistoryAdapter bookingHistoryAdapter = new BookingHistoryAdapter(getApplicationContext(),LoadData.loadServiseItemData());
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(serviceAdapter);
+        recyclerView.setAdapter(bookingHistoryAdapter);
     }
 }

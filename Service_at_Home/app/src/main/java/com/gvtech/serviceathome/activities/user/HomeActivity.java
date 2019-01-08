@@ -1,13 +1,10 @@
-package com.gvtech.serviceathome;
+package com.gvtech.serviceathome.activities.user;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -16,22 +13,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.AdapterView;
-import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.daimajia.slider.library.Animations.DescriptionAnimation;
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
-import com.gvtech.serviceathome.activities.AccountActivity;
-import com.gvtech.serviceathome.activities.BookingHistoryActivity;
-import com.gvtech.serviceathome.activities.SearchProfessionalActivity;
+import com.gvtech.serviceathome.R;
+import com.gvtech.serviceathome.activities.user.AccountActivity;
+import com.gvtech.serviceathome.activities.user.BookingHistoryActivity;
+import com.gvtech.serviceathome.activities.user.CalendarActivity;
+import com.gvtech.serviceathome.activities.user.SearchProfessionalActivity;
 import com.gvtech.serviceathome.adapters.ServiceAdapter;
 import com.gvtech.serviceathome.data.LoadData;
-import com.gvtech.serviceathome.utils.SharedStore;
+import com.gvtech.serviceathome.dialogs.ChangePasswordDialog;
 
 import java.util.HashMap;
 
@@ -161,8 +156,11 @@ public class HomeActivity extends AppCompatActivity
             Intent intent = new Intent(getApplicationContext(),BookingHistoryActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_calendar_events) {
-
+            Intent intent = new Intent(getApplicationContext(),CalendarActivity.class);
+            startActivity(intent);
         }else if (id == R.id.nav_change_pass) {
+            ChangePasswordDialog changePasswordDialog = new ChangePasswordDialog(this);
+            changePasswordDialog.show();
 
         }else if (id == R.id.nav_logout) {
 

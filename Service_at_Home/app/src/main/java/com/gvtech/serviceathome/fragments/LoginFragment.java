@@ -11,9 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.gvtech.serviceathome.HomeActivity;
 import com.gvtech.serviceathome.R;
 import com.gvtech.serviceathome.activities.LoginActivity;
+import com.gvtech.serviceathome.activities.professional.ProfessionalHomeActivity;
 
 public class LoginFragment extends Fragment {
 
@@ -49,7 +49,7 @@ public class LoginFragment extends Fragment {
             ((LoginActivity)this.getActivity()).replaceFragment(new LinkBusinessFragment(),true);
         });
         btnLogin.setOnClickListener(v -> {
-            Intent intent = new Intent(getActivity().getApplicationContext(),HomeActivity.class);
+            Intent intent = new Intent(getActivity().getApplicationContext(),ProfessionalHomeActivity.class);
             getActivity().startActivity(intent);
             getActivity().finish();
         });

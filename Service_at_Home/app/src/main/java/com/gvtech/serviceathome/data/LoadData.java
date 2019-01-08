@@ -13,7 +13,7 @@ public class LoadData {
     public static ArrayList<Service> loadServiseData(){
         ArrayList<Service> services = new ArrayList<>();
         for(int i =0; i < 30; i++){
-            Service service = new Service("123"+i,"Demo service "+i, "https://ps.w.org/adrotate/assets/banner-772x250.jpg");
+            Service service = new Service("123"+i,"Demo main service "+i, "https://ps.w.org/adrotate/assets/banner-772x250.jpg");
             services.add(service);
         }
         return services;

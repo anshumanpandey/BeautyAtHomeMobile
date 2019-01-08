@@ -1,19 +1,15 @@
 package com.gvtech.serviceathome.activities;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
-import com.gvtech.serviceathome.HomeActivity;
+import com.gvtech.serviceathome.activities.user.HomeActivity;
 import com.gvtech.serviceathome.R;
 import com.gvtech.serviceathome.utils.SharedStore;
-
-import java.time.Instant;
 
 public class WelcomeActivity extends AppCompatActivity {
 

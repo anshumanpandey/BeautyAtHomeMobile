@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:nestedScrollingEnabled="true"
     android:background="@color/bodyColorWhite"
-    tools:context=".activities.SearchProfessionalActivity">
+    tools:context=".activities.user.SearchProfessionalActivity">
 
 
     <RelativeLayout

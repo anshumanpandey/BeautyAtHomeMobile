@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.gvtech.serviceathome.HomeActivity;
 import com.gvtech.serviceathome.R;
 
 public class SplashScreenActivity extends AppCompatActivity {

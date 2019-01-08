@@ -133,7 +133,8 @@
     <string name="use_current_location">Use current location</string>
     <string name="or">Or</string>
     <string name="current_address">Current address</string>
-    <string name="update">Submit</string>
+    <string name="update">Update</string>
+    <string name="submit">Submit</string>
     <string name="search_details">Search Details</string>
     <string name="availability">Availability</string>
     <string name="gallery">Gallery</string>
@@ -142,4 +143,21 @@
     <string name="select_service">Select service</string>
     <string name="enter_pincode">Enter Pincode</string>
     <string name="search">Search</string>
+    <string name="current_pass">Enter current password</string>
+    <string name="new_pass">Enter new password</string>
+    <string name="re_new_pass">Confirm new password</string>
+    <string name="no">No</string>
+    <string name="title_activity_professional_home">ProfessionalHomeActivity</string>
+    <string name="professional_details">Professional details</string>
+    <string name="working_day">Working Day</string>
+    <string name="txt_hint_address_one">Address line 1</string>
+    <string name="txt_hint_address_two">Address line 2</string>
+    <string name="txt_hint_address_three">Address line 3</string>
+    <string name="txt_hint_city">City</string>
+    <string name="txt_hint_state">State</string>
+    <string name="add_new_service">Add new service</string>
+    <string name="duration">Duration in minutes</string>
+    <string name="price">Price</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
 </resources>
