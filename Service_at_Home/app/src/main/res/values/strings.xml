@@ -160,4 +160,15 @@
     <string name="price">Price</string>
     <string name="cancel">Cancel</string>
     <string name="add">Add</string>
+    <string name="personal_work_details">Work Details</string>
+    <string name="txt_hint_what_are_you">What are you</string>
+    <string name="txt_hint_about_service">About your service</string>
+    <string name="txt_hint_speciality">Speciality</string>
+    <string name="txt_hint_speciality_exa">ex: Weekends</string>
+    <string name="txt_hint_account_name">Account name</string>
+    <string name="txt_hint_account_no">Account Number</string>
+    <string name="txt_hint_sort_type">Sort type</string>
+    <string name="txt_hint_sort_code">Sort code</string>
+    <string name="txt_hint_paypal_account">Paypal Account</string>
+    <string name="upload">Upload</string>
 </resources>

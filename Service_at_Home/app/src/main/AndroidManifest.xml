@@ -73,15 +73,24 @@
         <activity
             android:name=".activities.professional.ProfAccountDetailsActivity"
             android:label="@string/account_details"
-            android:parentActivityName=".activities.professional.ProfessionalHomeActivity"
-            android:theme="@style/LightTheme.NoActionBar"
-            android:windowSoftInputMode="stateAlwaysHidden">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.gvtech.serviceathome.activities.professional.ProfessionalHomeActivity" />
+            android:parentActivityName=".activities.professional.ProfessionalHomeActivity">
+
         </activity>
-        <activity android:name=".activities.professional.AddServiceActivity"
+        <activity
+            android:name=".activities.professional.AddServiceActivity"
             android:label="@string/services"
+            android:parentActivityName=".activities.professional.ProfessionalHomeActivity">
+
+        </activity>
+        <activity
+            android:name=".activities.professional.AboutActivity"
+            android:label="@string/about_Me"
+            android:parentActivityName=".activities.professional.ProfessionalHomeActivity"
+            android:theme="@style/LightTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".activities.professional.GalleryActivity"
+            android:label="@string/gallery"
             android:parentActivityName=".activities.professional.ProfessionalHomeActivity">
 
         </activity>

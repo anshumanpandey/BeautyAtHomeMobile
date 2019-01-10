@@ -10,10 +10,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 
 import com.gvtech.serviceathome.R;
 import com.gvtech.serviceathome.activities.LoginActivity;
 import com.gvtech.serviceathome.activities.professional.ProfessionalHomeActivity;
+import com.gvtech.serviceathome.activities.user.HomeActivity;
 
 public class LoginFragment extends Fragment {
 
@@ -40,6 +42,7 @@ public class LoginFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         Button btnLogin = view.findViewById(R.id.btn_login);
+        EditText edtUsername = view.findViewById(R.id.edt_username);
         Button btnReg = view.findViewById(R.id.btn_reg);
         Button btnLinkBusiness = view.findViewById(R.id.btnLinkBusiness);
         btnReg.setOnClickListener(v -> {
@@ -49,7 +52,13 @@ public class LoginFragment extends Fragment {
             ((LoginActivity)this.getActivity()).replaceFragment(new LinkBusinessFragment(),true);
         });
         btnLogin.setOnClickListener(v -> {
-            Intent intent = new Intent(getActivity().getApplicationContext(),ProfessionalHomeActivity.class);
+            Intent intent;
+            if(edtUsername.getText().toString().equals("p")){
+                intent = new Intent(getActivity().getApplicationContext(),ProfessionalHomeActivity.class);
+            }else {
+                intent = new Intent(getActivity().getApplicationContext(),HomeActivity.class);
+            }
+
             getActivity().startActivity(intent);
             getActivity().finish();
         });

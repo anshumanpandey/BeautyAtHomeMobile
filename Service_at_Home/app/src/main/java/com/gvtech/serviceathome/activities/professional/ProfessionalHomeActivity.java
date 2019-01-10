@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.gvtech.serviceathome.R;
+import com.gvtech.serviceathome.activities.user.CalendarActivity;
 
 public class ProfessionalHomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -85,12 +86,18 @@ public class ProfessionalHomeActivity extends AppCompatActivity
             startActivity(intent);
         } else if (id == R.id.nav_about_me) {
 
+            Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
+            startActivity(intent);
+
         } else if (id == R.id.nav_calendar_events) {
+            Intent intent = new Intent(getApplicationContext(), CalendarActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_calendar_working_day) {
 
         } else if (id == R.id.nav_gallery) {
-
+            Intent intent = new Intent(getApplicationContext(), GalleryActivity.class);
+            startActivity(intent);
         }else if (id == R.id.nav_change_pass) {
 
         }else if (id == R.id.nav_logout) {
